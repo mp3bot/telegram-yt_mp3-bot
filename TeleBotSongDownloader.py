@@ -162,11 +162,11 @@ def privacy(bot,update):                          # '/privacy' function
     lang(bot,update)
   elif 'es' in read_database(chat_id):
     bot.sendMessage(chat_id,
-      text="@dwnmp3Bot únicamente guarda y conserva tu *nombre público* 🗣 y el *id del chat* 🆔 (requerido para enviar los archivos necesarios) junto con tus *preferencias de idioma* y de *sistema operativo* (para que no tengas que escribirlo cada vez). Finalmente, con fines méramente estadísticos, llevamos una cuenta con *la cantidad de descargas realizadas* ⤵\n\nGracias por confiar en nosotros 😃",
+      text="@YTDownMp3Bot únicamente guarda y conserva tu *nombre público* 🗣 y el *id del chat* 🆔 (requerido para enviar los archivos necesarios) junto con tus *preferencias de idioma* y de *sistema operativo* (para que no tengas que escribirlo cada vez). Finalmente, con fines méramente estadísticos, llevamos una cuenta con *la cantidad de descargas realizadas* ⤵\n\nGracias por confiar en nosotros 😃",
       parse_mode=telegram.ParseMode.MARKDOWN)
   elif 'en' in read_database(chat_id):
     bot.sendMessage(chat_id,
-      text="@dwnmp3Bot is only saving your *public name* 🗣 and *chat id* 🆔 (requiered for sending files) with your *language preferences* and *operating system* ones (in order to not to make you writing them each time). Finally, with stadistical purposes, we count *how many downloads you have done* ⤵\n\nThanks for trusting us 😃",
+      text="@YTDownMp3Bot is only saving your *public name* 🗣 and *chat id* 🆔 (requiered for sending files) with your *language preferences* and *operating system* ones (in order to not to make you writing them each time). Finally, with stadistical purposes, we count *how many downloads you have done* ⤵\n\nThanks for trusting us 😃",
       parse_mode=telegram.ParseMode.MARKDOWN)
 
 @run_async
@@ -391,12 +391,12 @@ under certain conditions; type `show c' for details.")
 # Initialize main system variables
 token = {}                                                    # Token dictionary
 archivo_token = open("token.txt", "r")                        # Reads token from .txt file
-token["Telegram"] = archivo_token.readline()
+token["915317919:AAGPB7_EfHmBDmCjBMjMjjoR12xLNTkvWOc"] = archivo_token.readline()
 archivo_api = open("API_KEY.txt","r")                         # Reads YouTube API from .txt file
 API=archivo_api.readline()
 
 # Initialize Telegram-bot variables
-updater = Updater(token["Telegram"], workers=200)             # Starts 200 threads for "updater" (declared with '@run_async' decorator)
+updater = Updater(token["915317919:AAGPB7_EfHmBDmCjBMjMjjoR12xLNTkvWOc"], workers=200)             # Starts 200 threads for "updater" (declared with '@run_async' decorator)
 dispatcher = updater.dispatcher                               # Starts "dispatcher" requierd to make the bot working properly
 
 # Initialize "Command" handlers
